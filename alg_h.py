@@ -25,9 +25,7 @@ for el in symbols:
             i += 1
 
 
-# почему эта функция работала с sorted_direction?
-# зачем вообще функция
-# не суть, тут идет возрастающая сортировака символов по их частотности
+# возрастающая сортировака символов по их частотности
 def sorting(freq_repo: dict) -> list:
     """
     Функция сортирующая список элементов' по их частотности
@@ -39,7 +37,6 @@ def sorting(freq_repo: dict) -> list:
 print("Частота букв в тексте: ", sorting(freq_repo))
 
 
-# инициализация класса для узлов
 class Node:
     def __init__(self, char, freq):
         self.char = char
@@ -52,7 +49,6 @@ class Node:
 nodes = [Node(char, freq) for char, freq in freq_repo.items()]
 
 
-# списковые вложения рулят
 def huffman_encoding(nodes):
     # пока все не свяжется в один узел
     while len(nodes) > 1:
@@ -93,10 +89,8 @@ for char, code in codes.items():
 
 def encode_text(text, codes):
     encoded_text = " "
-    # sep = '|'
     for char in text:
         encoded_text += codes[char]
-        # encode_text += sep
     return encoded_text
 
 

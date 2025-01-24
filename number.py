@@ -68,7 +68,7 @@ def setting_of_setter(setter: list) -> list:
                 setting_of_setter(setter)
             except ValueError:
                 print(
-                    "    Возможно, это не совсем число\n\
+                    "    Возможно это не совсем число\n\
         ⣿⣿⣿⣵⣿⣿⣿⠿⡟⣛⣧⣿⣯⣿⣝⡻⢿⣿⣿⣿⣿⣿⣿⣿\n\
         ⣿⣿⣿⣿⣿⠋⠁⣴⣶⣿⣿⣿⣿⣿⣿⣿⣦⣍⢿⣿⣿⣿⣿⣿\n\
         ⣿⣿⣿⣿⢷⠄⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣏⢼⣿⣿⣿⣿\n\
